@@ -3,6 +3,7 @@ layout: post
 permalink: "/post/software-engineering/solid-is-basic"
 title:  "S.O.L.I.D is Basic (7 mins read)"
 date:   2023-02-12 07:24:19 +1100
+reading_time: 7
 ---
 
 If you're planning on starting your journey into the art of coding, new to software development, or even a seasoned professional looking for a refresher, then this blog is for you!
