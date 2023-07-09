@@ -259,6 +259,8 @@ Running this in Windows should look like this:
 
 ![MAUI](/assets/dotnet-maui10.png)
 
+![MAUI](/assets/Windows.gif)
+
 Don't forget to update the configuration of the image.
 1. Go to the image properties
 2. In the Build Action, Update it to *Embedded resource*
@@ -267,6 +269,7 @@ Don't forget to update the configuration of the image.
 Running this in Android should look like this:
 ![MAUI](/assets/dotnet-maui11.png)
 
+![MAUI](/assets/Android.gif)
 Don't forget to update the configuration of the image.
 1. Navigate to the Platforms folder
 2. Go to the Android folder
