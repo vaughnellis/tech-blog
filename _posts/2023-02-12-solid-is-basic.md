@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: "/post/software-engineering/solid-is-basic"
-title:  "S.O.L.I.D is Basic (7 mins read)"
+title:  "S.O.L.I.D is Basic"
 date:   2023-02-12 07:24:19 +1100
 reading_time: 7
 ---

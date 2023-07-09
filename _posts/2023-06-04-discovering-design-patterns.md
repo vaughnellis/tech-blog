@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: "/post/software-engineering/discovering-design-patterns"
-title:  "Discovering Design Patterns (6 mins read)"
+title:  "Discovering Design Patterns"
 date:   2023-06-04 07:24:19 +1100
 reading_time: 6
 ---
