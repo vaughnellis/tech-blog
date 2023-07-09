@@ -219,7 +219,7 @@ Now, in the MessagingPage.xaml.cs, update the code below:
         // Create a Frame to contain the Label with a rounded background
         Frame messageFrame = new Frame
         {
-            BackgroundColor = Color.FromRgb(211, 211, 211), // Use
+            BackgroundColor = Color.FromRgb(211, 211, 211), //Set the background color
             Padding = new Thickness(10),
             CornerRadius = 10, // Set the corner radius for a round shape
             Content = new Label
