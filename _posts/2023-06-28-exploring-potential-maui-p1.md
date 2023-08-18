@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: "/post/software-engineering/exploring-the-potential-of-net-maui"
+permalink: "/post/software-engineering/exploring-the-potential-of-net-maui-p1"
 title:  "Exploring the Potential of .NET MAUI p.1"
 subtitle: Part 1
 date:   2023-07-09 07:24:19 +1100
