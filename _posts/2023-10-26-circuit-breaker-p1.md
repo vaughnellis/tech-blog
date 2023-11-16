@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: "/post/software-engineering/circuit-breaker"
+permalink: "/post/software-engineering/circuit-breaker-p1"
 title:  "Software Resilience w/ Circuit Breaker p.1"
 date:   2023-11-17 01:02:19 +1100
 ---
