@@ -2,7 +2,7 @@
 layout: post
 permalink: "/post/software-engineering/circuit-breaker-p2"
 title:  "Software Resilience w/ Circuit Breaker p.2"
-date:   2024-08-22 01:02:19 +1100
+date:   2024-08-22 23:05:00 UTC
 ---
 
 Hey there! It's been a while..
