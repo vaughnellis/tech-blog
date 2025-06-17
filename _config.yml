@@ -23,7 +23,7 @@ email: vaughnellisramosblog@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   @2023 Powered by Jekyll and Github Pages
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.vaughnellisramos.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.vaughnelliseramos.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: vaughnellise
 github_username:  vaughnellis
 linkedin_username: vaughnellisramos
