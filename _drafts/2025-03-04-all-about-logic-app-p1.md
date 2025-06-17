@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: "/post/software-engineering/all-about-logic-app-p1"
-title:  "Embracing Low Code/No Code with Azure Logic Apps"
+title:  "Embracing Low Code/No Code with Azure Logic Apps - (1/2)"
 ---
 
 I miss the good ol' days when coding was all about slicing and dicing lines of code. These days, everything's about the rage of generative AI and workflows (low-code/no-code platforms). Not that I’m complaining, it's just technology have progressed so much where we don't have to write hundreds-thousands lines of code to get things done. 
@@ -231,10 +231,13 @@ What you'll see in a <b>Standard - Workflow Service Plan</b> Logic App:
 <br/>
 
 What you'll see in a <b>Standard - ASEv3</b> Logic App:
+Now the question is, are there any difference with the Logic App Standard - Workflow Service Plan?
+Well, since both are hosted on App Service infrastructure, they share the same platform features.
+However, since ASE is meant for fully isolating your hosting environment, the **Networking** blade will vary.
 
 ### Let's dive into each Blade
 
-##### Note: "Note: I'll start with Consumption, then move to Standard.
+##### Note: I'll start with Consumption, then move to Standard.
 
 #### Overview
 
@@ -535,3 +538,90 @@ This blade provides essential tools to help diagnose issues and get assistance w
 
 It ensures that you have the right resources to quickly diagnose, troubleshoot, and escalate issues when necessary.
 
+#### Logic App Standard - Workflow Service Plan Menu Blade
+
+For this section, let's see what's different compared to the consumption plan.
+
+From the getgo, we can see that the highlighted blades below is different.
+<img src="/assets/logicapp-34.png" alt="LogicApp">
+
+Let's check it out!
+
+#### Workflows
+
+There is no dedicated Workflows blade in the Consumption plan because it hosts only one workflow per resource.
+In Standard plan, this blade serves as a central hub that lists all workflows contained within the app.
+
+<img src="/assets/logicapp-35.png" alt="LogicApp">
+
+In Standard plan, you have the option to create a **Stateful** or **Stateless** workflow.
+But wait, what's the difference?
+
+A **stateful workflow** stores the *trigger input*  and the *input & output of each action*. 
+This history allows you to track, resubmit, and audit runs, which is critical for complex or long-running business processes.
+
+Now, a **stateless workflow**, *does not* store the trigger input or any intermediate state.
+Once it runs, it's done! No history is saved by default.
+This makes it extremely fast and ideal for lightweight, high-throughput scenarios.
+
+
+Let's have a look in a table format:
+
+Feature | Stateful | Stateless
+Execution Persistence | Yes - input/output and state are stored | No - no state or history is saved
+Durability | Long-running, survives restartes/failures | Short-lived, cannot span more than 5 minutes
+Re-run & Resubmit | Yes - via history & run tracking | No - hisotry is not stored
+Throughput & Performance | Slower - due to persistence overhead | Faster - no tracking, minimal overhead
+Error Handling & Retries | Yes - Built-in support for retries & resumability | Yes - retry logic is possible but no resumability
+Workflow History | Full run history | None - only logs if explicitly ingest in a datastore
+Execution Time | Hours/days - no strict limit | Max 5 minutes
+Pricing impact | More expensive (due to storage and runtime) | Cheaper (less storage, no tracking)
+
+
+Perhaps, you are now wondering, when do you use each type?
+Below are some use case that help you decide:
+
+Use Case | Type | Why?
+Process that needs to persist action if initial attempt fails | Stateful | Designed to track previous attempts and handle retries or failure states
+Batch processing | Stateful | Requires tracking progress, handling errors or resuming from failures
+Event-based notification with no dependencies | Stateless | Lightweight - no need to store state
+API wrapper like process that accepts input, performs a task, and returns a response | Stateless | Short-lived, no need for tracking state or history
+
+
+Let's now go back to the menu blade.
+
+Now for Connections, this blade allows you to manage and configure the connections that your Logic App uses to integration with various external services and systems.
+
+<img src="/assets/logicapp-36.png" alt="LogicApp">
+
+This blade is essential for maintaining and troubleshooting the integrations between your Logic App and other services it interacts with.
+
+#### Artifacts
+
+This blade allows you to manage the various reusable components (artifacts) that your workflow relies on to interact with external data and systems.
+
+<img src="/assets/logicapp-37.png" alt="LogicApp">
+
+Schemas: Defines the structure and data types for messages exchanged between systems, enabling data validation and transformation within the Logic App.
+
+Maps: Used to map data between different formats or systems. This allows for data transformation and manipulation to fit the needs of different services.
+
+Assemblies: Contains compiled code (e.g., C# assemblies) that can be referenced and used within the Logic App for custom logic or operations.
+
+Rules: Defines business logic or conditions that guide the workflow’s execution, making it possible to apply conditional logic and dynamic decision-making in your Logic App.
+
+#### Deployments
+
+This blade helps you manage the deployment process, including versioning and managing different environments for testing and production workflows.
+
+<img src="/assets/logicapp-38.png" alt="LogicApp">
+
+Deployment Slots: Allows you to create multiple environments (e.g., staging, production) for your Logic App. 
+You can deploy changes to a slot before swapping it into production, enabling zero-downtime deployments and easier testing.
+
+Deployment Center: Provides an interface to configure continuous deployment (CI/CD) pipelines, linking your Logic App to source control systems like GitHub or Azure Repos. 
+It automates deployment and updates of the Logic App based on changes in the repository.
+
+#### Settings
+
+This blade centralizes the configuration and   
