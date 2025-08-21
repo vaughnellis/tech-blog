@@ -24,7 +24,7 @@ The recommended learning & hands-on Plan:
     - Explore <a href="https://learn.microsoft.com/en-us/training/modules/orchestrate-semantic-kernel-multi-agent-solution/"> Multi-Agent orchestration with Semantic Kernel</a> module.
     - Read through Microsoft's <a href="https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/agenticAI"> Agentic AI</a> resources.
     - Look for blogs around <a href="https://techcommunity.microsoft.com/blog/educatordeveloperblog/using-azure-ai-agent-service-with-autogen--semantic-kernel-to-build-a-multi-agen/4363121/">Using Azure AI Agent Service with AutoGen / Semantic Kernel to build a multi-agent's solution</a> for architectural insight.
-
+    - <a href="https://microsoft.github.io/AI_Agents_Hackathon/#stream-schedule">Watch expert livestreams </a> occurred from April 8 -30 which covers a wide-range of topics such as SK, AutoGen, Azure Agent SDK, and Microsoft 365 Agents SDK. 
 
 ### Phase 2: Hands-On Build & Explore
 * Goal: Build simple agents and gradually layer complexity
