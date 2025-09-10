@@ -28,7 +28,7 @@ layout: default
     </div>
     
     {%- if page.series and page.series.id -%}
-      {%- assign series_posts = site.posts | where: 'series.id', page.series.id | sort: 'series.part' -%}
+      {%- assign series_posts = site.posts | where_exp: 'post', 'post.series and post.series.id == page.series.id' | sort: 'series.part' -%}
       <aside class="series-sidebar">
         <div class="series-sidebar-header">
           <h3 class="series-sidebar-title">{{ page.series.title | default: 'Series' }}</h3>
