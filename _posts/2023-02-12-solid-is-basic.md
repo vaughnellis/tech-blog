@@ -4,6 +4,8 @@ permalink: "/post/software-engineering/solid-is-basic"
 title:  "S.O.L.I.D is Basic"
 date:   2023-02-12 07:24:19 +1100
 reading_time: 7
+categories: [Software Engineering, Best Practices]
+tags: [SOLID Principles, Design Patterns, C#, Object-Oriented Programming]
 ---
 
 If you're planning on starting your journey into the art of coding, new to software development, or even a seasoned professional looking for a refresher, then this blog is for you!

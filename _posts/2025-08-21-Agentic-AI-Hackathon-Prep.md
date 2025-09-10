@@ -2,6 +2,8 @@
 layout: post
 permalink: "/post/software-engineering/agentic-ai-hackathon-prep"
 title:  "Agentic AI Hackathon Prep Plan"
+categories: [AI & ML, Software Engineering]
+tags: [AI Agents, Azure, Semantic Kernel, AutoGen, Microsoft, Hackathon]
 ---
 
 Hey there!

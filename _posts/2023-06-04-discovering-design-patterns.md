@@ -4,6 +4,8 @@ permalink: "/post/software-engineering/discovering-design-patterns"
 title:  "Discovering Design Patterns"
 date:   2023-06-04 07:24:19 +1100
 reading_time: 6
+categories: [Software Engineering, Architecture]
+tags: [Design Patterns, Gang of Four, Object-Oriented Programming, Best Practices]
 ---
 
 Hey there! If you read my blog about *SOLID is Basic* and wanted to explore more or simply wanted to have a refresher, then keep reading!

@@ -1,10 +1,17 @@
 ---
 layout: post
 permalink: "/post/software-engineering/exploring-the-potential-of-net-maui-p1"
-title:  "Exploring the Potential of .NET MAUI p.1"
-subtitle: Part 1
+title:  "Exploring the Potential of .NET MAUI"
+subtitle: Part 1/5
 date:   2023-07-09 07:24:19 +1100
 reading_time: 6
+categories: [Software Engineering, Mobile Development]
+tags: [.NET MAUI, Cross-Platform, Xamarin, Mobile Development, C#, XAML]
+series:
+  id: "net-maui-series"
+  title: "Exploring .NET MAUI"
+  part: 1
+  total: 2
 ---
 
 Hey there, It's been a while! <br/>
