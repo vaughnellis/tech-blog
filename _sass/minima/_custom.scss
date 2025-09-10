@@ -985,38 +985,32 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
 
 /* Post Layout with Sidebar */
 .post-layout {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
   position: relative;
+  display: block;
 }
 
 .post-content {
-  flex: 1;
-  max-width: calc(100% - 320px);
+  margin-right: 320px;
+  max-width: none;
 }
 
 @media (max-width: 1024px) {
-  .post-layout {
-    flex-direction: column;
-    gap: 0;
-  }
-  
   .post-content {
-    max-width: 100%;
+    margin-right: 0;
   }
 }
 
 /* Series Sidebar - Clean and Minimal */
 .series-sidebar {
-  position: sticky;
+  position: fixed;
   top: 100px;
+  right: 0;
   width: 280px;
-  flex-shrink: 0;
   background: white;
   border-left: 3px solid var(--link-color);
   padding: 16px 0 0 16px;
   margin-top: 20px;
+  z-index: 100;
 }
 
 .series-sidebar-header {
@@ -1097,11 +1091,13 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
   .series-sidebar {
     position: static;
     width: 100%;
+    right: auto;
     margin-top: 30px;
     margin-bottom: 20px;
     border-left: none;
     border-top: 3px solid var(--link-color);
     padding: 16px 0 0 0;
+    z-index: auto;
   }
 }
 
