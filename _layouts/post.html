@@ -27,29 +27,31 @@ layout: default
       {{ content }}
     </div>
     
-    {%- if page.series and page.series.id -%}
+    {%- if page.article-series and page.article-series.id -%}
       {%- assign series_posts = '' | split: '' -%}
       {%- for post in site.posts -%}
-        {%- if post.series and post.series.id == page.series.id -%}
+        {%- if post.article-series and post.article-series.id == page.article-series.id -%}
           {%- assign series_posts = series_posts | push: post -%}
         {%- endif -%}
       {%- endfor -%}
-      {%- assign series_posts = series_posts | sort: 'series.part' -%}
+      {%- assign series_posts = series_posts | sort: 'article-series.part' -%}
       <aside class="series-sidebar">
         <div class="series-sidebar-header">
-          <h3 class="series-sidebar-title">{{ page.series.title | default: 'Series' }}</h3>
-          <span class="series-sidebar-progress">{{ page.series.part | default: 1 }} of {{ page.series.total | default: 1 }}</span>
+          <h3 class="series-sidebar-title">{{ page.article-series.series-title | default: 'Article Series' }}</h3>
+          <span class="series-sidebar-progress">{{ page.article-series.part | default: 1 }} of {{ page.article-series.total | default: 1 }}</span>
         </div>
         <nav class="series-sidebar-nav">
           {%- for series_post in series_posts -%}
-            {%- if series_post.series and series_post.series.part -%}
+            {%- if series_post.article-series and series_post.article-series.part -%}
               <a href="{{ series_post.url | relative_url }}" class="series-sidebar-link {% if series_post.url == page.url %}active{% endif %}">
-                <span class="series-sidebar-number">{{ series_post.series.part }}</span>
+                <span class="series-sidebar-number">{{ series_post.article-series.part }}</span>
                 <span class="series-sidebar-text">
-                  {%- if series_post.subtitle -%}
+                  {%- if series_post.article-series.sidebar-label -%}
+                    {{ series_post.article-series.sidebar-label | escape }}
+                  {%- elsif series_post.subtitle -%}
                     {{ series_post.subtitle | escape }}
                   {%- else -%}
-                    Part {{ series_post.series.part }}
+                    Part {{ series_post.article-series.part }}
                   {%- endif -%}
                 </span>
               </a>
