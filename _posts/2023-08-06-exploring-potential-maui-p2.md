@@ -2,15 +2,15 @@
 layout: post
 permalink: "/post/software-engineering/exploring-the-potential-of-net-maui-p2"
 title:  "Exploring the Potential of .NET MAUI"
-subtitle: Demo
+subtitle: "Demo: Real-Time Messaging (2/2)"
 date:   2023-07-09 07:24:19 +1100
 reading_time: 6
 categories: [Software Engineering, Mobile Development]
 tags: [.NET MAUI, Cross-Platform, Xamarin, Mobile Development, C#, XAML, SignalR]
 article-series:
   id: "net-maui-series"
-  series-title: "Exploring .NET MAUI"
-  sidebar-label: "TEST 1"
+  series-title: "Building Cross-Platform Apps with .NET MAUI"
+  sidebar-label: "Demo: Real-Time Messaging"
   part: 2
   total: 2
 ---

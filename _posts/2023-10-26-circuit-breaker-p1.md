@@ -1,14 +1,15 @@
 ---
 layout: post
 permalink: "/post/software-engineering/circuit-breaker-p1"
-title:  "Software Resilience w/ Circuit Breaker"
-subtitle: Part 1
+title:  "Software Resilience with Circuit Breaker"
+subtitle: "Foundations (1/2)"
 date:   2023-11-17 01:02:19 +1100
 categories: [Software Engineering, Architecture]
 tags: [Circuit Breaker, Resilience, .NET, Polly, Microservices, Best Practices]
-series:
+article-series:
   id: "circuit-breaker-series"
-  title: "Software Resilience with Circuit Breaker"
+  series-title: "Building Resilient Software with Circuit Breaker"
+  sidebar-label: "Foundations"
   part: 1
   total: 2
 ---
