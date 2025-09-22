@@ -4,7 +4,7 @@ permalink: "/post/software-engineering/getting-started-with-agentic-ai-tech-user
 title:  "Getting Started with Agentic AI for Technical Users"
 subtitle: "Empowering Technical Users"
 date:   2025-09-11 07:24:19 +1100
-categories: [Software Engineering, Mobile Development]
+categories: [Software Engineering, Agentic AI, AI & ML]
 tags: [Agentic AI, Microsoft, Azure AI, Azure AI Foundry, Semantic Kernel, AutoGen, Copilot, Power Platform, AI Agents, Technical Users, AI Orchestration, AI Development, .NET, Software Engineering, Automation, AI Architecture, Multi-Agent Systems, DevOps, API Integration, Enterprise AI, Developer Tools]
 article-series:
   id: "getting-started-agentic-ai-series"

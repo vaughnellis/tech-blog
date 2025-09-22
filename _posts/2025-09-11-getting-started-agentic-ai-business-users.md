@@ -4,7 +4,7 @@ permalink: "/post/software-engineering/getting-started-with-agentic-ai-business-
 title:  "Getting Started with Agentic AI for Business Users"
 subtitle: "Empowering Business Users"
 date:   2025-09-11 07:24:19 +1100
-categories: [Software Engineering, Mobile Development]
+categories: [Software Engineering, Agentic AI, AI & ML]
 tags: [Agentic AI, Microsoft, Copilot, Copilot Studio, Azure AI, Azure AI Foundry, Autogen Studio, Power Platform, Power Automate, Power Apps, Power Virtual Agents, Power BI, Microsoft 365, Dynamics 365, Business Users, AI Agents, AI Productivity, No Code AI, Workflow Automation, Digital Transformation]
 article-series:
   id: "getting-started-agentic-ai-series"
