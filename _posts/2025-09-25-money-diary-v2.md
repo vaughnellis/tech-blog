@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: "/post/software-engineering/money-diary-v1"
+permalink: "/post/software-engineering/money-diary-v2"
 title:  "Money Diary v2.0"
 categories: [Personal Finance, Software Engineering]
 tags: [React, Electron, Cordova, Capacitor, Azure, Logic Apps, Cosmos DB, Personal Finance, Budgeting, Cross-Platform]
