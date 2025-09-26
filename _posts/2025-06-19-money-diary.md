@@ -3,7 +3,13 @@ layout: post
 permalink: "/post/software-engineering/money-diary-v1"
 title:  "Money Diary v1.0"
 categories: [Personal Finance, Software Engineering]
-tags: [React, Azure, Cosmos DB, Personal Finance, Budgeting, Cross-Platform]
+tags: [React, Electron, Cordova, Capacitor, Azure, Logic Apps, Cosmos DB, Personal Finance, Budgeting, Cross-Platform]
+article-series:
+  id: "money-diary-series"
+  series-title: "Money Diary"
+  sidebar-label: "V1.0"
+  part: 1
+  total: 2
 ---
 
 Hey there, it's been a while!
